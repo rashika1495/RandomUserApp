@@ -1,0 +1,9 @@
+<div *ngIf="randomUser" class="user-container">
+  <div>
+    <img src="{{randomUser.results[0].picture.large}}" alt="User Image">
+    <p><strong>Name:</strong> {{ randomUser.results[0].name.first }} {{ randomUser.results[0].name.last }}</p>
+    <p><strong>Email:</strong> {{ randomUser.results[0].email }}</p>
+    <p><strong>Phone:</strong> {{ randomUser.results[0].phone }}</p>
+    <p><strong>Location:</strong> {{ randomUser.results[0].location.street.number }} {{ randomUser.results[0].location.street.name }}, {{ randomUser.results[0].location.city }}, {{ randomUser.results[0].location.state }}, {{ randomUser.results[0].location.country }}</p>
+  </div>
+</div>
